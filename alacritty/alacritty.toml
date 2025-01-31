@@ -5,6 +5,7 @@
 ### This section documents the root level of the configuration file
 # All imports must either be absolute paths starting with `/`,
 # or paths relative to the user's home directory starting with `~/`
+[general]
 import = []
 working_directory = "None"
 live_config_reload = true
