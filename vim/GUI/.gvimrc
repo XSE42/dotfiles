@@ -9,7 +9,7 @@ source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 
 set guifont=Cascadia\ Mono:h11:cDEFAULT  " 字体
-set columns=140
-set lines=54
-winpos 700 30  " 窗口位置
+set columns=120
+set lines=40
+" winpos 700 30  " 窗口位置
 " colorscheme onedark
