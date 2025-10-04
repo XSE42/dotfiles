@@ -17,6 +17,7 @@ opt.updatetime = 200 -- Save swap file and trigger CursorHold
 
 -- 编辑
 opt.number = true -- 行号
+opt.relativenumber = true -- 相对行号
 opt.wrap = true -- 长行回绕，在下一行显示
 opt.ruler = true -- 显示光标所在行和列
 opt.cursorline = true -- 高亮当前行

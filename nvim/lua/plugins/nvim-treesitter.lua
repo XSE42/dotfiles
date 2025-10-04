@@ -13,13 +13,7 @@ return {
       ensure_installed = {
         "bash",
         "c",
-        "lua",
-        "markdown",
         "python",
-        "rust",
-        "vim",
-        "vimdoc",
-        "yaml",
       },
       -- 不同括号颜色区分
       rainbow = {

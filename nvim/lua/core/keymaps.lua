@@ -10,9 +10,9 @@ local keymap = vim.keymap
 --   term_mode = "t",
 --   command_mode = "c",
 
+-- NORMAL Mode
+keymap.set("n", "<leader>n", ":nohl<CR>")  -- 取消高亮
+
 -- INSERT Mode
 
 -- VISUAL Mode
-
--- NORMAL Mode
-keymap.set("n", "<leader>n", ":nohl<CR>")  -- 取消高亮
