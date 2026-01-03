@@ -24,8 +24,9 @@ config.initial_rows = 50 -- 窗口行数
 
 -- 编辑
 config.font = wezterm.font_with_fallback {
-    { family = "CaskaydiaCove Nerd Font Mono" },
-    { family = "JetBrains Mono" },
+  { family = "Maple Mono Normal NL NF CN" },
+  { family = "CaskaydiaCove Nerd Font Mono" },
+  { family = "JetBrains Mono" },
 } -- 字体列表
 config.font_size = 12.0 -- 字体大小
 config.line_height = 1.0 -- 行高

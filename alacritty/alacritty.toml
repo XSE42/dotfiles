@@ -35,7 +35,7 @@ history = 10000
 ### FONT
 ### This section documents the [font] table of the configuration file
 [font]
-normal = { family = "CaskaydiaCove Nerd Font Mono", style = "Regular" }
+normal = { family = "Maple Mono Normal NL NF CN", style = "Regular" }
 size = 12.0
 
 

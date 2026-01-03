@@ -3,27 +3,50 @@
 [colors]
 
 # One Dark
-# [colors.primary]
-# background = "#1e2127"
-# foreground = "#abb2bf"
-# [colors.normal]
-# black   = "#1e2127"
-# red     = "#e06c75"
-# green   = "#98c379"
-# yellow  = "#d19a66"
-# blue    = "#61afef"
-# magenta = "#c678dd"
-# cyan    = "#56b6c2"
-# white   = "#abb2bf"
-# [colors.bright]
-# black   = "#5c6370"
-# red     = "#e06c75"
-# green   = "#98c379"
-# yellow  = "#d19a66"
-# blue    = "#61afef"
-# magenta = "#c678dd"
-# cyan    = "#56b6c2"
-# white   = "#ffffff"
+[colors.primary]
+background = "#282c34"
+foreground = "#abb2bf"
+[colors.normal]
+black   = "#1e2127"
+red     = "#e06c75"
+green   = "#98c379"
+yellow  = "#d19a66"
+blue    = "#61afef"
+magenta = "#c678dd"
+cyan    = "#56b6c2"
+white   = "#abb2bf"
+[colors.bright]
+black   = "#5c6370"
+red     = "#e06c75"
+green   = "#98c379"
+yellow  = "#d19a66"
+blue    = "#61afef"
+magenta = "#c678dd"
+cyan    = "#56b6c2"
+white   = "#ffffff"
+
+# One Light
+[colors.primary]
+background = "#f8f8f8"
+foreground = "#2a2b33"
+[colors.normal]
+black   = "#000000"
+red     = "#de3d35"
+green   = "#3e953a"
+yellow  = "#d2b67b"
+blue    = "#2f5af3"
+magenta = "#a00095"
+cyan    = "#3e953a"
+white   = "#bbbbbb"
+[colors.bright]
+black   = "#000000"
+red     = "#de3d35"
+green   = "#3e953a"
+yellow  = "#d2b67b"
+blue    = "#2f5af3"
+magenta = "#a00095"
+cyan    = "#3e953a"
+white   = "#ffffff"
 
 # Tokyo Night
 [colors.primary]
@@ -55,30 +78,30 @@ index = 17
 color = "#db4b4b"
 
 # Tokyo Night Storm
-# [colors.primary]
-# background = "#24283b"
-# foreground = "#c0caf5"
-# [colors.normal]
-# black   = "#1d202f"
-# red     = "#f7768e"
-# green   = "#9ece6a"
-# yellow  = "#e0af68"
-# blue    = "#7aa2f7"
-# magenta = "#bb9af7"
-# cyan    = "#7dcfff"
-# white   = "#a9b1d6"
-# [colors.bright]
-# black   = "#414868"
-# red     = "#f7768e"
-# green   = "#9ece6a"
-# yellow  = "#e0af68"
-# blue    = "#7aa2f7"
-# magenta = "#bb9af7"
-# cyan    = "#7dcfff"
-# white   = "#c0caf5"
-# [[colors.indexed_colors]]
-# index = 16
-# color = "#ff9e64"
-# [[colors.indexed_colors]]
-# index = 17
-# color = "#db4b4b"
+[colors.primary]
+background = "#24283b"
+foreground = "#c0caf5"
+[colors.normal]
+black   = "#1d202f"
+red     = "#f7768e"
+green   = "#9ece6a"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#a9b1d6"
+[colors.bright]
+black   = "#414868"
+red     = "#f7768e"
+green   = "#9ece6a"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#c0caf5"
+[[colors.indexed_colors]]
+index = 16
+color = "#ff9e64"
+[[colors.indexed_colors]]
+index = 17
+color = "#db4b4b"
