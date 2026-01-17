@@ -5,21 +5,35 @@
 ### Vim
 
 ```shell
-ln -s /[path]/dotfiles/vim/linux/vimrc ~/.vim/vimrc
+# 0. directories
+# shell
+mkdir -p ${XDG_STATE_HOME:-$HOME/.local/state}/vim/{undo,swap}
+# powershell ~\AppData\Local
+mkdir $env:LOCALAPPDATA\vim\undo
+mkdir $env:LOCALAPPDATA\vim\swap
+
+1. using `.vim`
+ln -s /[path]/dotfiles/vim/vimrc ~/.vim/vimrc
+
+2. using XDG Base Directory
+ln -s /[path]/dotfiles/vim $XDG_CONFIG_HOME/vim
 ```
 
 ### Neovim
 
 ```shell
+# 0. directories
+# shell
+mkdir -p ${XDG_STATE_HOME:-$HOME/.local/state}/nvim/{undo,swap}
+# powershell ~\AppData\Local
+mkdir $env:LOCALAPPDATA\nvim-data\undo
+mkdir $env:LOCALAPPDATA\nvim-data\swap
+
 # 1. using `.config`
 ln -s /[path]/dotfiles/nvim ~/.config/nvim
-# or
-cp -r /[path]/dotfiles/nvim ~/.config/nvim
 
-# 2. using $XDG_CONFIG_HOME
+# 2. using XDG Base Directory
 ln -s /[path]/dotfiles/nvim $XDG_CONFIG_HOME/nvim
-# or
-cp -r /[path]/dotfiles/nvim $XDG_CONFIG_HOME/nvim
 ```
 
 ## Shell
@@ -41,7 +55,7 @@ cp -r /[path]/dotfiles/nvim $XDG_CONFIG_HOME/nvim
   ZSH="$HOME/.config/oh-my-zsh" sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   ZSH="$HOME/.config/oh-my-zsh" sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-  # 2. using $XDG_CONFIG_HOME
+  # 2. using XDG Base Directory
   ZSH="$XDG_CONFIG_HOME/oh-my-zsh" sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   ZSH="$XDG_CONFIG_HOME/oh-my-zsh" sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   ZSH="$XDG_CONFIG_HOME/oh-my-zsh" sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -90,7 +104,7 @@ ln -s /[path]/dotfiles/alacritty ~/.config/alacritty
 # or
 cp -r /[path]/dotfiles/alacritty ~/.config/alacritty
 
-# 2. using $XDG_CONFIG_HOME
+# 2. using XDG Base Directory
 ln -s /[path]/dotfiles/alacritty $XDG_CONFIG_HOME/alacritty
 # or
 cp -r /[path]/dotfiles/alacritty $XDG_CONFIG_HOME/alacritty
@@ -104,7 +118,7 @@ ln -s /[path]/dotfiles/wezterm ~/.config/wezterm
 # or
 cp -r /[path]/dotfiles/wezterm ~/.config/wezterm
 
-# 2. using $XDG_CONFIG_HOME
+# 2. using XDG Base Directory
 ln -s /[path]/dotfiles/wezterm $XDG_CONFIG_HOME/wezterm
 # or
 cp -r /[path]/dotfiles/wezterm $XDG_CONFIG_HOME/wezterm
@@ -121,7 +135,7 @@ mkdir -p ~/.config/tmux
 ln -s ~/.config/oh-my-tmux/.tmux.conf ~/.config/tmux/tmux.conf
 ln -s /[path]/dotfiles/tmux/.tmux.conf.local ~/.config/tmux/tmux.conf.local
 
-# 2. using $XDG_CONFIG_HOME
+# 2. using XDG Base Directory
 git clone https://github.com/gpakosz/.tmux.git $XDG_CONFIG_HOME/oh-my-tmux
 mkdir -p $XDG_CONFIG_HOME/tmux
 ln -s $XDG_CONFIG_HOME/oh-my-tmux/.tmux.conf $XDG_CONFIG_HOME/tmux/tmux.conf
